@@ -3,9 +3,10 @@ package client
 import (
 	"errors"
 	"fmt"
+	"time"
+
 	"github.com/qiuchengw/gopay/common"
 	"github.com/qiuchengw/gopay/util"
-	"time"
 )
 
 var defaultWechatMiniProgramClient *WechatMiniProgramClient
@@ -60,6 +61,7 @@ func (this *WechatMiniProgramClient) Pay(charge *common.Charge) (map[string]stri
 	c["nonceStr"] = util.RandomStr()
 	c["package"] = fmt.Sprintf("prepay_id=%s", xmlRe.PrepayID)
 	c["signType"] = "MD5"
+	c["appId"] = this.AppID
 	sign2, err := WechatGenSign(this.Key, c)
 	if err != nil {
 		return map[string]string{}, errors.New("WechatWeb: " + err.Error())
