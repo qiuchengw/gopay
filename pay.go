@@ -2,10 +2,10 @@ package gopay
 
 import (
 	"errors"
-	"github.com/milkbobo/gopay/client"
-	"github.com/milkbobo/gopay/common"
-	"github.com/milkbobo/gopay/constant"
-	//"github.com/milkbobo/gopay/util"
+	"github.com/qiuchengw/gopay/client"
+	"github.com/qiuchengw/gopay/common"
+	"github.com/qiuchengw/gopay/constant"
+	//"github.com/qiuchengw/gopay/util"
 	//"strconv"
 )
 

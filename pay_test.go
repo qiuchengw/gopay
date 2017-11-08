@@ -2,9 +2,9 @@ package gopay
 
 import (
 	"fmt"
-	"github.com/milkbobo/gopay/client"
-	"github.com/milkbobo/gopay/common"
-	"github.com/milkbobo/gopay/constant"
+	"github.com/qiuchengw/gopay/client"
+	"github.com/qiuchengw/gopay/common"
+	"github.com/qiuchengw/gopay/constant"
 	"net/http"
 	"testing"
 	"crypto/x509"

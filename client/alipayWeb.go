@@ -7,7 +7,7 @@ import (
 	"crypto/sha1"
 	"encoding/base64"
 	"fmt"
-	"github.com/milkbobo/gopay/common"
+	"github.com/qiuchengw/gopay/common"
 	"net/url"
 	"sort"
 	"strings"

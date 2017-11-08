@@ -161,11 +161,11 @@
       <find>body</find>
       <find>trade_no</find>
       <find>fishedee/sdk</find>
-      <find>milkbobo/pay/</find>
+      <find>qiuchengw/pay/</find>
     </findStrings>
     <replaceStrings>
-      <replace>milkbobo</replace>
-      <replace>milkbobo/gopay/</replace>
+      <replace>qiuchengw</replace>
+      <replace>qiuchengw/gopay/</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>

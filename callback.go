@@ -9,10 +9,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/fishedee/encoding"
-	"github.com/milkbobo/gopay/client"
-	"github.com/milkbobo/gopay/common"
-	"github.com/milkbobo/gopay/util"
+	"github.com/qiuchengw/gopay/client"
+	"github.com/qiuchengw/gopay/common"
+	"github.com/qiuchengw/gopay/util"
 )
 
 func AliWebCallback(w http.ResponseWriter, r *http.Request) (*common.AliWebPayResult, error) {
@@ -74,20 +73,22 @@ func AliAppCallback(w http.ResponseWriter, r *http.Request) (*common.AliWebPayRe
 
 	client.DefaultAliAppClient().CheckSign(signData, m["sign"])
 
-	mByte, err := encoding.EncodeJson(m)
-	if err != nil {
-		result = "error"
-		panic(err)
-	}
+	// mByte, err := encoding.EncodeJson(m)
+	// if err != nil {
+	// 	result = "error"
+	// 	panic(err)
+	// }
 
-	var aliPay common.AliWebPayResult
-	err = encoding.DecodeJson(mByte, &aliPay)
-	if err != nil {
-		result = "error"
-		panic(fmt.Sprintf("m is %v, err is %v", m, err))
-	}
-	result = "success"
-	return &aliPay, nil
+	// var aliPay common.AliWebPayResult
+	// err = encoding.DecodeJson(mByte, &aliPay)
+	// if err != nil {
+	// 	result = "error"
+	// 	panic(fmt.Sprintf("m is %v, err is %v", m, err))
+	// }
+	// result = "success"
+	// return &aliPay, nil
+
+	return nil, errors.New("NOT implement")
 }
 
 // WeChatCallback 微信支付
